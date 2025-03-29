@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en"  class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="./input.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body">
+    <!-- Header section -->
+    <header class="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+        <nav class="max-w-[1440px] container mx-auto py-4 px-4 flex items-center justify-between ">
+            <!-- logo -->
+            <a href="#home">
+                
+                <div class="text-2xl font-bold flex items-center gap-2">
+                    <img src="images/logo.png" alt="logo" class="h-8">
+                    <span class="text-primary">LasLesVPN</span>
+                </div>
+            </a>
+
+            <!-- Menu -->
+            
+            <ul class="hidden md:flex space-x-8">
+                <li>
+                    <a href="#home" class="text-gray-600 hover:text-primary  transition-all duration-300">About</a>
+                </li>
+                <li>
+                    <a href="#features" class="text-gray-600 hover:text-primary  transition-all duration-300">Features</a>
+                </li>
+                <li>
+                    <a href="#pricing" class="text-gray-600 hover:text-primary  transition-all duration-300">Pricing</a>
+                </li>
+                <li>
+                    <a href="#testimonials" class="text-gray-600 hover:text-primary  transition-all duration-300">Testimonials</a>
+                </li>
+                <li>
+                    <a href="#subscribe" class="text-gray-600 hover:text-primary  transition-all duration-300">Help</a>
+                </li>
+            </ul>
+
+            <!-- Auth btn -->
+            <div class="space-x-4">
+                <button class="text-gray-600 hover:text-primary cursor-pointer hidden sm:inline-flex">Sign In</button>
+                <button class="bg-primary text-white hover:bg-red-600 rounded-full py-2 px-4 cursor-pointer  transition-all duration-300">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    
+    <section id="home" class="max-w-[1440px] mx-auto flex flex-col-reverse py-4 px-4 md:flex-row gap-12 items-center">
+        <!-- left content -->
+        <div data-aos="fade-right" class="md:w-1/2 mb-8 md:mb-0 space-y-8 pt-28">
+            <h1 class="lg:text-6xl md:text-5xl text-4xl font-bold text-heading-text leading-tight">Want to anything to be
+                <br class="lg:block hidden">easy with LasLesVPN</h1>
+            <p class="text-primary-text text-lg leading-relaxed max-w-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti impedit, ea nihil et earum fugiat!</p>
+            <button class="bg-primary transition-all duration-300 text-white px-12 py-4 rounded-lg hover:bg-red-600 shadow-lg hover:shadow-xl cursor-pointer text-lg font-medium">Get Started</button>
+        </div>
+
+        <!-- right content -->
+        <div data-aos="fade-left" class="md:w-1/2 pt-28">
+            <img src="./images/banner.png" alt="banner image" class="w-full">
+        </div>
+    </section>
+
+    <!-- Statistics section -->
+    <section data-aos="fade-up" id="" class="section-container">
+        <div class="bg-white rounded-xl shadow-lg p-8">
+            <div class="flex flex-col justify-around items-center md:flex-row divide-y md:divide-y-0 md:divide-x divide-gray-200">
+                <!-- user stat -->
+                <div class="flex gap-x-6 items-center px-12 py-6 md:py-0">
+                    <div class="p-5 shrink-0 bg-secondary/30 rounded-full">
+                        <img src="./images/user.png" alt="user image" class="size-8">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900">90+</h3>
+                        <p class="text-primary-text ">User</p>
+                    </div>
+                </div>
+                <!-- location stat -->
+                <div class="flex gap-x-6 items-center px-12 py-6 md:py-0">
+                    
+                        <div class="p-5 shrink-0 bg-secondary/30 rounded-full">
+                            <img src="./images/location.png" alt="user image" class="size-8">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">40+</h3>
+                            <p class="text-primary-text ">Location</p>
+                        </div></h1>
+                </div>
+                <!-- server stat -->
+                <div class="flex gap-x-6 items-center px-12 py-6 md:py-0">
+                    <div class="p-5  shrink-0 bg-secondary/30 rounded-full">
+                        <img src="./images/storage.png" alt="user image" class="size-8">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900">50+</h3>
+                        <p class="text-primary-text ">Server</p>
+                    </div></div>
+            </div>
+        </div>
+        
+
+    </section>
+
+
+    <!-- Feature section -->
+    <section id="features" class="section-container">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-12">
+            <div class="left-content md:w-1/2"  data-aos="fade-right">
+                <img src="./images/features.png" alt="feature image">
+            </div>
+            
+            <div class="right-content md:w-1/2 space-y-8"  data-aos="fade-left">
+                <h2 class="text-heading-text text-4xl font-bold leading-tight">We Provide Many <br> Features You Can Use.</h2>
+                <p class="text-primary-text leading-relaxed md:w-2/3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sequi harum perspiciatis nostrum inventore ullam.</p>
+
+
+                <!-- Feature List -->
+                
+                <ul class="space-y-2">
+                    <li class="flex items-center gap-4">
+                        <div class="">
+                            <img src="./images/star.png" alt="">
+                        </div>
+                        <span class="text-gray-600">Powerful online protection</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <div class="">
+                            <img src="./images/star.png" alt="">
+                        </div>
+                        <span class="text-gray-600">Powerful online protection</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <div class="">
+                            <img src="./images/star.png" alt="">
+                        </div>
+                        <span class="text-gray-600">Powerful online protection</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <div class="">
+                            <img src="./images/star.png" alt="">
+                        </div>
+                        <span class="text-gray-600">Powerful online protection</span>
+                    </li>
+                </ul>
+                
+                
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- pricing section -->
+    <section id="pricing" class="bg-gray-50">
+        <div class="section-container">
+            <!-- header -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-heading-text mb-4">Chose Your Plan.</h2>
+                <p class="text-primary-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam temporibus mollitia!</p>
+            </div>
+
+            <!-- Card -->
+            <div class="grid md:grid-cols-3 gap-16 grid-cols-1 max-w-6xl mx-auto" >
+                <!-- FREE PLANE -->
+                <div data-aos="fade-up" class="bg-white  flex flex-col p-8 rounded-2xl border-2 border-gray-200 hover:border-red-500 
+                transition duration-300 hover:scale-110 items-center">
+                    <img src="./images/box.png" alt="" class="w-32 mb-8">
+                    <h3 class="text-2xl font-bold mb-8">Free Plan</h3>
+
+                    <ul class="space-y-5 flex flex-col mb-10">
+                        <li class="flex items-center gap-2 ">
+                            <img src="./images/star.png" alt="" class="size-5">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </li>
+                        <li class="flex items-center gap-2 ">
+                            <img src="./images/star.png" alt="" class="size-5">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </li>
+                        <li class="flex items-center gap-2 ">
+                            <img src="./images/star.png" alt="" class="size-5">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </li>
+                        <li class="flex items-center gap-2 ">
+                            <img src="./images/star.png" alt="" class="size-5">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </li>
+                    </ul>
+
+
+                    <div class="space-y-4 text-center">
+                        <div>Free</div>
+                        <button class="border-2 border-primary rounded-full px-16 py-2 hover:bg-red-500 transition  duration-300 cursor-pointer hover:text-white">Select</button>
+                    </div>
+                </div>
+                <!-- ..... PLANE -->
+                <div data-aos="fade-up" class="bg-white  flex flex-col p-8 rounded-2xl border-2 border-gray-200 hover:border-red-500 
+                transition duration-300 hover:scale-110 items-center">
+                    <img src="./images/box.png" alt="" class="w-32 mb-8">
+                    <h3 class="text-2xl font-bold mb-8">Stander Plan</h3>
+
+                    <ul class="space-y-5 flex flex-col mb-10">
+                        <li class="flex items-center gap-2 ">
+                            <img src="./images/star.png" alt="" class="size-5">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </li>
+                        <li class="flex items-center gap-2 ">
+                            <img src="./images/star.png" alt="" class="size-5">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </li>
+                        <li class="flex items-center gap-2 ">
+                            <img src="./images/star.png" alt="" class="size-5">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </li>
+                        <li class="flex items-center gap-2 ">
+                            <img src="./images/star.png" alt="" class="size-5">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </li>
+                        <li class="flex items-center gap-2 ">
+                            <img src="./images/star.png" alt="" class="size-5">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </li>
+                    </ul>
+
+
+                    <div class="space-y-4 text-center">
+                        <div><span class="text-2xl">49.99$</span> <span class="text-primary-text">/m</span></div>
+                        <button class="border-2 border-primary rounded-full px-16 py-2 hover:bg-red-500 transition  duration-300 cursor-pointer hover:text-white">Select</button>
+                    </div>
+                </div>
+                <!-- Pro PLANE -->
+                <div data-aos="fade-up" class="bg-white  flex flex-col p-8 rounded-2xl border-2 border-red-500 
+                transition duration-300 hover:scale-110 items-center">
+                    <img src="./images/box.png" alt="" class="w-32 mb-8">
+                    <h3 class="text-2xl font-bold mb-8">Pro Plan</h3>
+
+                    <ul class="space-y-5 flex flex-col mb-10">
+                        <li class="flex items-center gap-2 ">
+                            <img src="./images/star.png" alt="" class="size-5">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </li>
+                        <li class="flex items-center gap-2 ">
+                            <img src="./images/star.png" alt="" class="size-5">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </li>
+                        <li class="flex items-center gap-2 ">
+                            <img src="./images/star.png" alt="" class="size-5">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </li>
+                        <li class="flex items-center gap-2 ">
+                            <img src="./images/star.png" alt="" class="size-5">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </li>
+                        <li class="flex items-center gap-2 ">
+                            <img src="./images/star.png" alt="" class="size-5">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </li>
+                        <li class="flex items-center gap-2 ">
+                            <img src="./images/star.png" alt="" class="size-5">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </li>
+                    </ul>
+
+
+                    <div class="space-y-4 text-center">
+                        <div><span class="text-2xl">99.99$</span> <span class="text-primary-text">/m</span></div>
+                        <button class="border-2 border-primary rounded-full px-16 py-2 hover:bg-red-500 transition  duration-300 cursor-pointer hover:text-white">Select</button>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+    </section>
+
+
+    <!-- Gold NetWork Section -->
+    <section id="" class="section-container">
+        <!-- header -->
+        <div class="text-center mb-16 md:w-1/4 mx-auto">
+            <h2 class="text-4xl font-bold text-heading-text mb-4">Huge Global NetWork Fast VPN.</h2>
+            <p class="text-primary-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam temporibus mollitia!</p>
+        </div>
+
+        <div  data-aos="zoom-in" class="mb-12">
+            <img src="./images/map.png" alt="map image" class="w-full">
+        </div>
+
+
+        <div class="flex flex-wrap justify-center gap-12 opacity-75">
+            <img  data-aos="fade-down" src="./images/amazon.png" alt="" class="h-12 grayscale hover:grayscale-0 transition duration-300">
+            <img data-aos="fade-down" src="./images/reddit.png" alt="" class="h-12 grayscale hover:grayscale-0 transition duration-300">
+            <img data-aos="fade-down" src="./images/netflix.png" alt="" class="h-12 grayscale hover:grayscale-0 transition duration-300">
+            <img data-aos="fade-down" src="./images/discord.png" alt="" class="h-12 grayscale hover:grayscale-0 transition duration-300">
+            <img data-aos="fade-down" src="./images/spotify.png" alt="" class="h-12 grayscale hover:grayscale-0 transition duration-300">
+        </div>
+    </section>
+
+    <!-- testimonials Section -->
+    <section id="testimonials" class="section-container">
+        <!-- header -->
+        <div class="text-center mb-16 md:w-1/3 mx-auto">
+            <h2 class="text-4xl font-bold text-heading-text mb-4">Trusted By Thousands Of Happy Customer.</h2>
+            <p class="text-primary-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam temporibus mollitia!</p>
+        </div>
+
+        <div class="swiper testimonialSwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                
+            
+            </div>
+            
+            <div class="flex justify-between items-center mt-12 w-full float-right">
+                <div class="swiper-button-prev !static !w-[60px] !h-[60px] flex items-center justify-center border-2 border-[#F53955] rounded-full
+                        text-[#F53955] hover:bg-red-200 hover:text-primary">
+                        <img src="./images/arrow-left.png" alt="" class="h-6 w-6">
+                    </div>
+                <div class="swiper-button-next !static !w-[60px] !h-[60px] flex items-center justify-center border-2 border-[#F53955] rounded-full
+                        text-[#F53955] hover:bg-red-200 bg-primary hover:text-primary">
+                        <img src="./images/arrow-right.png" alt="" class="h-6 w-6">
+                    </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- su section -->
+    <section id="subscribe" class="section-container">
+        <div class="bg-white rounded-xl shadow-lg lg:p-16 md:p-12 p-8 hover:shadow-2xl transition-all duration-300">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <!-- left content -->
+                <div data-aos="fade-right">
+                    <h2 class="lg:text-4xl md:text-3xl text-2xl font-bold text-heading-text mb-5">Subscribe Now For <br> Get Special Features!</h2>
+                    <p class="text-primary-text">Let's Subscribe With Us To Find The Fun.</p>
+                </div>
+
+                <!-- right content -->
+                <div>
+                    <button data-aos="fade-left" class="bg-primary text-white hover:bg-red-600 rounded-xl lg:px-16 md:px-12 lg:py-4 md:py-3 px-8 py-2">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-[#F8F8F8]">
+        <div class="section-container">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
+                <!-- Brand -->
+                <div   class="lg:col-span-1">
+                    <div data-aos="fade-right" class="text-2xl font-bold flex items-center gap-2">
+                        <img src="images/logo.png" alt="logo" class="h-8">
+                        <span class="text-primary">LasLesVPN</span>
+                    </div>
+                    <p  data-aos="fade-right"class="text-primary-text mb-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, ad fuga. Optio?</p>
+                    <div  class="flex gap-3.5">
+                        <div class="flex gap-2">
+                            <a data-aos="fade-down" href="#" class="p-2 rounded-full shadow-xl hover:shadow-2xl transition duration-300 bg-red-500 hover:translate-y-1">
+                                <img src="./images/facebook.png" alt="" class="size-4">
+                            </a>
+                        </div>
+                        <div data-aos="fade-up" class="flex gap-2">
+                            <a href="#" class="p-2 rounded-full shadow-xl hover:shadow-2xl transition duration-300 bg-red-500 hover:translate-y-1">
+                                <img src="./images/twitter.png" alt="" class="size-4">
+                            </a>
+                        </div>
+                        <div data-aos="fade-down" class="flex gap-2">
+                            <a href="#" class="p-2 rounded-full shadow-xl hover:shadow-2xl transition duration-300 bg-red-500 hover:translate-y-1">
+                                <img src="./images/instagram.png" alt="" class="size-4">
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                    <p class="text-primary-text mt-4">&copy;2025 LasLesVPN.</p>
+                </div>
+
+                <!-- Product -->
+                <div>
+                    <h2 class="font-medium text-lg mb-6">Product</h2>
+                    <ul class="text-primary-text space-y-4">
+                        <li>
+                            <a href="#" class="hover:text-primary">Download</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-primary">location</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-primary">Server</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-primary">Pricing</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+
+                <!-- Engage -->
+                <div>
+                    <h2 class="font-medium text-lg mb-6">Engage</h2>
+                    <ul class="text-primary-text space-y-4">
+                        <li>
+                            <a href="#" class="hover:text-primary">Download</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-primary">location</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-primary">Server</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-primary">Pricing</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+
+                <!-- Earn Money -->
+                <div>
+                    <h2 class="font-medium text-lg mb-6">Earn</h2>
+                    <ul class="text-primary-text space-y-4">
+                        <li>
+                            <a href="#" class="hover:text-primary">Download</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-primary">location</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-primary">Server</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- script -->
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                duration: 1000,
+                once: true
+            }
+        );
+    </script>
+</body>
+</html>
+
